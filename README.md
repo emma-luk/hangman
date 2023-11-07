@@ -59,3 +59,41 @@ The project directory contains the following files:
 
 Feel free to customise this README with more details, such as acknowledgments, troubleshooting tips, or additional sections specific to your project. Update it as needed to provide comprehensive information for users and developers.
 
+# Project Title
+
+Milestone 3: Random Word Guessing Game
+
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [License](#license)
+
+## Description
+
+The "Milestone 3: Random Word Guessing Game" project is a Python program that combines a random word guessing game with user input validation. The project aims to create an interactive game where the user guesses a letter from a randomly selected word and provides immediate feedback on the correctness of the guess.
+
+This project demonstrates several important concepts, including:
+
+- Input validation to ensure users provide valid input.
+- Checking whether the user's guess is in the secret word.
+- Using functions to modularize and organize code.
+
+By following this project, you will learn how to enhance code readability and maintainability by breaking it into functions, as well as how to validate user input and provide real-time feedback.
+
+## Installation
+
+To run this project, you need Python installed on your system. You can download Python from the official website: [Python Downloads](https://www.python.org/downloads/)
+
+After installing Python, you can follow these steps:
+
+1. Clone this GitHub repository to your local machine:
+https://github.com/emma-luk/hangman
+
+2. Navigate to the project directory:
+cd milestone-3-random-word-guess
+
+3. Run the Python script:
+python python milestone_3.py
