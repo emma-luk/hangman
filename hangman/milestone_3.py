@@ -1,14 +1,19 @@
+# Previous code for input validation
 while True:
-    # Step 2: Ask the user to guess a letter and assign this to a variable called guess.
     guess = input("Guess a letter: ")
 
-    # Step 3: Check that the guess is a single alphabetical character.
     if len(guess) == 1 and guess.isalpha():
-        # Step 4: If the guess passes the checks, break out of the loop.
         break
     else:
-        # Step 5: If the guess does not pass the checks, then print a message saying "Invalid letter. Please, enter a single alphabetical character."
         print("Invalid letter. Please, enter a single alphabetical character.")
 
-# After the loop, you can continue with the rest of your code.
-print("You guessed:", guess)
+# Secret word (you can randomly select it as you did before)
+secret_word = "apple"  # Replace with your code to randomly select the secret word
+
+# Step 1: Create an if statement that checks if the guess is in the word.
+if guess in secret_word:
+    # Step 2: In the body of the if statement, print a message saying "Good guess! {guess} is in the word."
+    print(f"Good guess! {guess} is in the word.")
+else:
+    # Step 3: Create an else block that prints a message saying "Sorry, {guess} is not in the word. Try again."
+    print(f"Sorry, {guess} is not in the word. Try again.")
