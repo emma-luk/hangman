@@ -140,3 +140,58 @@ cd milestone-3-random-word-guess
 
 3. Run the Python script:
 python python milestone_4.py
+
+# Project Title
+
+Milestone 5: Hangman Game
+
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [License](#license)
+
+## Description
+
+The "Milestone 5: Hangman Game" project is an interactive Python-based Hangman game. It allows players to guess letters to uncover a hidden word, with a limited number of lives. The project's aim is to provide an engaging and entertaining game for users while also demonstrating key programming concepts such as classes, methods, user input handling, and word guessing logic.
+
+### What I Learned
+
+Throughout the development of this project, you will learn:
+
+- How to structure a Python project with classes and methods.
+- Handling user input and providing feedback.
+- Implementing the game logic for Hangman, including word guessing, revealing letters, and tracking lives.
+- Developing a console-based game that users can enjoy.
+
+## Installation
+
+To run this project, you need Python installed on your system. You can download Python from the official website: [Python Downloads](https://www.python.org/downloads/)
+
+After installing Python, follow these steps:
+
+1. Clone this GitHub repository to your local machine:
+After installing Python, follow these steps:
+
+1. Clone this GitHub repository to your local machine:
+After installing Python, you can follow these steps:
+
+1. Clone this GitHub repository to your local machine:
+https://github.com/emma-luk/hangman
+
+2. Navigate to the project directory:
+cd milestone-5-random-word-guess
+
+3. Run the Python script:
+python python milestone_5.py
+
+## File Structure
+
+The project directory contains the following files:
+
+- `milestone_5.py`: The main Python script for the Hangman game with encapsulated game logic.
+- `README.md`: This README file.
+
+Feel free to explore and modify the code to enhance the game or add new features.
