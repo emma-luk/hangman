@@ -18,7 +18,7 @@ class Hangman:
             for i in range(len(self.word)):
                 if self.word[i] == guess:
                     self.word_guessed[i] = guess
-                    self.num_letters -= 1
+            self.num_letters -= 1
         else:
             print(f"Sorry, {guess} is not in the word. Try again.")
         self.list_of_guesses.append(guess)
@@ -49,4 +49,5 @@ class Hangman:
 word_list = ["apple", "banana", "cherry", "grape", "watermelon"]
 hangman_game = Hangman(word_list)
 hangman_game.run_game()
+
 
