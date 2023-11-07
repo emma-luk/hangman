@@ -10,35 +10,43 @@ class Hangman:
         self.list_of_guesses = []
 
     def check_guess(self, guess):
-        # Step 1: Define the check_guess method
         guess = guess.lower()
 
         if guess in self.word:
-            # In the body of the if statement, print a message saying "Good guess! {guess} is in the word."
             print(f"Good guess! {guess} is in the word.")
-        # You can continue with the logic of this method in the next task.
+            # Loop through each letter in the word and update word_guessed
+            for i in range(len(self.word)):
+                if self.word[i] == guess:
+                    self.word_guessed[i] = guess
+                    self.num_letters -= 1
+        else:
+            print(f"Sorry, {guess} is not in the word. Try again.")
+        self.list_of_guesses.append(guess)
 
     def ask_for_input(self):
-        # Step 2: Define the ask_for_input method
         while True:
             guess = input("Guess a letter: ")
 
             if not (len(guess) == 1 and guess.isalpha()):
-                # If the guess is NOT a single alphabetical character
                 print("Invalid letter. Please, enter a single alphabetical character.")
             elif guess in self.list_of_guesses:
-                # If the guess is already in the list_of_guesses
                 print("You already tried that letter!")
             else:
-                # If the guess is a single alphabetical character and not already in list_of_guesses
-                self.check_guess(guess)  # Call the check_guess method
-                self.list_of_guesses.append(guess)  # Append the guess to the list_of_guesses
+                self.check_guess(guess)
 
-    # Step 3: Call the ask_for_input method to test your code.
     def run_game(self):
-        self.ask_for_input()
+        while self.num_lives > 0 and self.num_letters > 0:
+            print("Word Guessed:", " ".join(self.word_guessed))
+            print("Number of Lives:", self.num_lives)
+            print("List of Guesses:", self.list_of_guesses)
+            self.ask_for_input()
+            if "_" not in self.word_guessed:
+                print("Congratulations! You guessed the word:", self.word)
+                break
+            self.num_lives -= 1
 
 # Example usage:
 word_list = ["apple", "banana", "cherry", "grape", "watermelon"]
 hangman_game = Hangman(word_list)
 hangman_game.run_game()
+
