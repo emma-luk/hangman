@@ -25,4 +25,12 @@ print("Randomly Selected Word:", word)
 guess = input("Enter a single letter: ")
 
 # Step 2: Assign the input to a variable called guess.
-print("You entered:", guess)
+#bbprint("You entered:", guess)
+
+# Step 1: Create an if statement that checks if the length of the input is equal to 1 and the input is alphabetical.
+if len(guess) == 1 and guess.isalpha():
+    # Step 2: In the body of the if statement, print a message that says "Good guess!".
+    print("Good guess!")
+else:
+    # Step 3: Create an else block that prints "Oops! That is not a valid input." if the preceding conditions are not met.
+    print("Oops! That is not a valid input.")
